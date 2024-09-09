@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frase = prompt("ingrese una frase")
+        let counter = 0
+        for (let i = 0; i < frase.length; i++) {
+            if(frase[i] == 'a'  ||  frase[i] == 'A'){
+                counter+=1
+              
+            }
+            if(frase[i] == 'e'  ||  frase[i] == 'E'){
+                counter+=1
+        
+            }
+            if(frase[i] == 'i'  ||  frase[i] == 'i'){
+                counter+=1
+             
+            }
+            if(frase[i] == 'o'  ||  frase[i] == 'O'){
+                counter+=1
+            
+            }
+            if(frase[i] == 'u'  ||  frase[i] == 'U'){
+                counter+=1
+               
+            }
+        }
+        document.write(counter, " letras son vocales de ", frase.length)
+    </script>
+</body>
+</html>

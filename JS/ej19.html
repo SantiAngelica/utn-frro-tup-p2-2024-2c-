@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let nro = parseFloat(prompt('ingrese la nota'))
+         nro = Math.floor(nro)
+         switch (nro) {
+            case 0:
+            case 1:
+            case 2:
+                document.write("MUY DEFICIENTE")
+                break;
+            case 3:
+            case 4:
+                document.write("INSUFICIENTE")
+                break;
+            case 5:
+                document.write("SUFICIENTE")
+                break;
+            case 6:
+                document.write("BIEN")
+                break;
+            case 7:
+            case 8:
+                document.write("NOTABLE")
+                break;
+            case 9:
+            case 10:
+                document.write("SOBRESALIENTE")
+                break;
+         }
+    </script>
+</body>
+</html>

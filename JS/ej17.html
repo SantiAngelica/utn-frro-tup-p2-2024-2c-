@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let nro = parseFloat(prompt('ingrese un numero'))
+         let esPrimo = true
+         for (let i = 2; i < nro / 2; i++) {
+            nro % i == 0 && (esPrimo = false)
+         }
+         esPrimo ? document.write("es primo") : document.write("no es primo")
+    </script>
+</body>
+</html>

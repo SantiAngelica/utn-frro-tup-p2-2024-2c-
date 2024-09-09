@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nro
+        let counter = 0
+        while(true){
+            nro = prompt("ingrese una frase")
+            if(nro == null){
+                break
+            }
+            nro = Number(nro)
+            isNaN(nro) ? alert("No a ingresado un numero") : counter += nro
+            
+        } 
+        document.write("la suma es: ", counter)
+    </script>
+</body>
+</html>

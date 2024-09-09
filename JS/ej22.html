@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nro
+        let letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
+        let resultados = []
+         while(true){
+            nro = prompt("ingrese el DNI")
+            if(nro == null){
+                break
+            }
+            nro = Number(nro)
+            isNaN(nro) && alert("No a ingresado un numero") 
+            if(nro > 0 && nro < 99999999){
+                let res = Math.round(nro & 23)
+                resultados.push(letras[res])
+            }
+            
+        } 
+        document.write('Las letras equivalentes de los DNIs ingresados son: ', resultados.join(" - "))
+    </script>
+</body>
+</html>

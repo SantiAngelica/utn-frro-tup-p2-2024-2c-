@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nro1 = parseFloat(prompt('ingrese un numero'))
+        let nro2 = parseFloat(prompt('ingrese otro numero'))
+        let divisores = []
+        for (let i = 1; i < 200; i++) {
+            if(nro1 % i == 0 && nro2 % i == 0 )
+            divisores.push(i)
+        }
+        document.write("sus divisores comunes son: ")
+        for (let i = 0; i < divisores.length; i++) {
+            document.write(divisores[i], " ")
+            
+        }
+    </script>
+</body>
+</html>
