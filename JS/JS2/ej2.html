@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mensaje(n1, n2){
+            let nroMax
+            if (n1 > n2) {
+                nroMax = n1
+            } else if (n2 > n1) {
+                nroMax = n2
+            } else {
+                nroMax = "los numeros son iguales"
+            }
+            return nroMax
+             
+        }
+
+        let n1 = parseInt(prompt("ingrese un numero"))
+        let n2 = parseInt(prompt("ingrese un numero"))
+        let nromax = mensaje(n1, n2)
+        alert(nromax)
+    </script>
+</body>
+</html>
+

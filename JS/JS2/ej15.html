@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function esBisiesto(año) {
+            const date = new Date(año, 1, 29)
+            if(date.getDate() === 29){
+                return "El año es bisiesto"
+            } else {
+                return "El año no es bisiesto"
+            }
+        }
+
+    alert(esBisiesto(parseInt(prompt("ingrese el año"))))
+    </script>
+</body>
+
+</html>

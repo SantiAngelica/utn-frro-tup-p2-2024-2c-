@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function imprimirRepetidos(array){
+            let repetidos = []
+            let conter = 0
+            array.forEach(n => {
+                conter = 0
+                for (let i = 0; i < array.length ; i++) {
+                    if(n === array[i]){
+                        conter+=1
+                    }
+                }
+
+
+
+                if(conter > 1){
+                    if(!repetidos.includes(n)){
+                        repetidos.push(n)
+                    }
+                    
+                }
+            }); 
+            console.log(repetidos.join(","))
+        }
+
+        imprimirRepetidos([3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100])
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function primeraMayuscula(string) {
+            let array = string.split(' ')
+            let primeraMayus = array.map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1))
+            return primeraMayus.join(' ');
+        }
+
+        console.log(primeraMayuscula(prompt("ingrese un texto")))
+    </script>
+</body>
+
+</html>

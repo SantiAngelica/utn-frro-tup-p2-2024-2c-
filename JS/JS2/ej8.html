@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function doble(n1) {
+            return n1 * 2
+
+        }
+        function siguiente(n) {
+            return n + 1
+        }
+        function imprimirElDobleDelSiguiente(n){
+            console.log(siguiente(doble(n)))
+        }
+        let n = parseInt(prompt("ingrese un numero"))
+        imprimirElDobleDelSiguiente(n)
+    </script>
+</body>
+
+</html>

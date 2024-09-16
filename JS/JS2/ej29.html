@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function masLarga(string) {
+            let palabras = string.split(' ');
+
+        
+            let palabraLarga = '';
+
+            palabras.forEach(palabra => {
+                if (palabra.length > palabraLarga.length) {
+                    palabraLarga = palabra;
+                }
+            });
+
+            return palabraLarga;
+        }
+
+        console.log(masLarga(prompt("ingrese un texto")))
+    </script>   
+</body>
+
+</html>

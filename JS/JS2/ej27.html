@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function alfabetizar(string){
+            let sArray = string.split('')
+            let sOrdenado = sArray.sort()
+            return sOrdenado.join('')
+        }
+
+        console.log(alfabetizar(prompt("ingrese un texto")))
+    </script>
+</body>
+</html>

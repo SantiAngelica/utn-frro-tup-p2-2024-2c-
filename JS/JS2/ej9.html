@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function siguiente(n){
+            return n+1
+       }
+        function doble(n1 ){
+            return n1*2
+             
+        }
+        function cuadrado(n1){
+            return n1*n1
+             
+        }
+        function imprimirElDobleDelSiguienteAlCuadrado(n){
+            console.log(doble(siguiente(cuadrado(n))))
+        }
+        let n1 = parseInt(prompt("ingrese un numero"))
+        imprimirElDobleDelSiguienteAlCuadrado(n1)
+    </script>
+</body>
+</html>
